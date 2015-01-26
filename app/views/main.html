@@ -1,0 +1,45 @@
+
+
+        <p class="lead">Initially we only have 1 route - /home</p>
+        <p class="lead">This UI allows us to dynamically create 4 new states/routes</p>
+
+
+<pre class="" ng-repeat="item in list">
+<div class="">{{item.name}}</div>
+<div class="">{{item.info.url}}</div>
+<div class="">{{item.info.templateUrl}}</div>
+<div class="">{{item.info.controller}}</div>
+<div class="">-</div>
+
+</pre>
+
+
+
+<div class="h1">
+    Create Route Form
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">State Name  (eg.state1 or state2...)</label>
+    <input type="text" class="form-control" ng-model="stateName" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">URL (eg./state1 or /state2 ...)</label>
+    <input type="text" class="form-control" ng-model="url" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Template URL (eg.views/state1.html or views/state2.html ...)</label>
+    <input type="text" class="form-control" ng-model="templateUrl" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Controller Name (eg.State1Ctrl or State2Ctrl ...)</label>
+    <input type="text" class="form-control" ng-model="controller" placeholder="">
+  </div>
+
+  <button class="btn btn-default" ng-click="addNewRoute()">Submit</button>
+</form>
+
+
+<br/>
+<br/>
