@@ -1,6 +1,6 @@
 # dynamicRoutes
 
-**[confusionprevails.com](https://github.com/angular-ui/ui-router)**
+**[confusionprevails.com](http://confusionprevails.com)**
 
 ## Primary Goal
 This is a demonstration on how to create dynamic routes/states using AngularJS and Angular UI-Router.
